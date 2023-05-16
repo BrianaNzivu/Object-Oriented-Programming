@@ -78,7 +78,8 @@ public class Functions_classexe {
             String answer = s.next();
 
             transaction = answer.equalsIgnoreCase("yes");
-        } while (transaction);
+        } 
+        while (transaction);
 
         s.close();
     }
