@@ -13,23 +13,27 @@ public class IntrotoOOP_week21 {
     private String eName;
     private int eSalary;
     private int payrise;
+    private int x;
+    Scanner s = new Scanner(System.in);
     
     IntrotoOOP_week21 (){
-     Scanner s = new Scanner(System.in);
-        
         System.out.println("Enter name: ");
         eName = s.next();
-        
-        System.out.println("Enter number: ");
-        int x = s.nextInt();
-        if (x>999){
-             System.out.println("ERROR:NUMBER SHOULD BE LESS THAN 1000");
-        }
-        else{
-        eNumber = x;}
+     
+        check();
         
         System.out.println("Enter Salary: ");
         eSalary = s.nextInt();
+    }
+    public void check(){
+        System.out.println("Enter number: ");
+        x = s.nextInt();
+        
+        while (x>999){
+             System.out.println("ERROR:NUMBER SHOULD BE LESS THAN 1000");
+             check();
+        }
+        eNumber = x;
     }
 
     public void display(){
