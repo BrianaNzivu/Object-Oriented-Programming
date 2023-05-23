@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package pkgclass._exe3.pkg1;
 
 /**
@@ -15,7 +10,14 @@ public class Class_exe31 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        Student s1 = new Student();
+        Faculty sg1 = new Faculty();
+        Registrar sg2 = new Registrar();
+        
+        sg2.input();
+        sg1.grade(sg2);
+        s1.display();
     }
     
 }
