@@ -7,7 +7,7 @@ package week1.pkg1;
 
 /**
  *
- * @author bnzivu4
+ * @author bnzivu
  * 
  */
 
